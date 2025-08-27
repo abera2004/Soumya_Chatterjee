@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soumya Chatterjee • Research</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: { light: '#2563eb', dark: '#3b82f6' }
+          }
+        }
+      }
+    }
+  </script>
+  <meta name="description" content="Research interests, projects, supervision, and publications of Dr. Soumya Chatterjee."/>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 font-sans transition-colors duration-500">
+
+  <!-- Navbar -->
+  <header class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-md sticky top-0 z-50 transition">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-brand-light dark:text-brand-dark">Dr. Soumya Chatterjee</a>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="about.html" class="hover:text-brand-light dark:hover:text-brand-dark">About</a>
+        <a href="research.html" class="hover:text-brand-light dark:hover:text-brand-dark">Research</a>
+        <a href="publications.html" class="hover:text-brand-light dark:hover:text-brand-dark">Publications</a>
+        <a href="teaching.html" class="hover:text-brand-light dark:hover:text-brand-dark">Teaching</a>
+        <a href="awards.html" class="hover:text-brand-light dark:hover:text-brand-dark">Awards</a>
+        <a href="contact.html" class="hover:text-brand-light dark:hover:text-brand-dark">Contact</a>
+      </nav>
+      <!-- Dark Mode Toggle -->
+      <button id="theme-toggle" class="ml-4 p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative py-20 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 gap-12">
+      <img src="Profile_Pic.jpg" alt="Soumya Chatterjee" class="rounded-3xl shadow-2xl w-52 h-52 object-cover ring-4 ring-brand-light dark:ring-brand-dark">
+      <div>
+        <h1 class="flip-text text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+          Research
+        </h1>
+        <p class="mt-3 text-lg text-gray-700 dark:text-gray-300">
+          Electrical Engineering • High Voltage • AI-enabled Condition Monitoring
+        </p>
+        <p class="mt-2 text-gray-600 dark:text-gray-400 max-w-2xl">
+          Explore current interests, funded projects, student supervision, and a selection of recent publications.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flip animation -->
+  <style>
+    .flip-text { display:inline-block; animation: flip 4s infinite; transform-style: preserve-3d; }
+    @keyframes flip { 0%{transform:rotateY(0)} 40%{transform:rotateY(360deg)} 100%{transform:rotateY(360deg)} }
+    .animate-fadeIn { animation: fadeIn 0.9s ease-in-out; }
+    @keyframes fadeIn { from { opacity:0; transform: translateY(12px);} to { opacity:1; transform: translateY(0);} }
+  </style>
+
+  <!-- Research Interests -->
+  <section id="interests" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Research Interests</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg mb-2">Insulation Diagnosis</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Diagnostics for high-voltage equipment health.</p>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg mb-2">Condition Monitoring</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Online/accelerated techniques and sensors.</p>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg mb-2">Graph Theory & Complex Networks</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Visibility graphs for signal characterization.</p>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg mb-2">Signal & Image Processing</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Deep learning for electrical/biomedical data.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsored Research / Consultancy Projects -->
+  <section id="projects" class="bg-gray-100 dark:bg-gray-800 py-16 transition-colors duration-500 animate-fadeIn">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-end justify-between gap-4 mb-6">
+        <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark">Sponsored Research & Consultancy</h2>
+        <input id="projectSearch" type="search" placeholder="Search projects..." class="px-3 py-2 rounded-xl bg-white dark:bg-gray-700 ring-1 ring-gray-200 dark:ring-gray-600 focus:outline-none focus:ring-brand-light dark:focus:ring-brand-dark w-64">
+      </div>
+      <div id="projectList" class="grid md:grid-cols-2 gap-6">
+        <!-- Project cards populated statically (search filters them) -->
+        <article class="project-card p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition" data-text="non contact voltage detector overhead transmission 765 kv megger 2024 2025 consultancy pi completed">
+          <h3 class="font-semibold text-lg">Non-contact Voltage Detector for Overhead Lines up to 765 kV</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Sponsor: Megger Instruments India Ltd • Amount: ₹8.08L • Role: PI</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Duration: 2024–25 • Status: Completed • Type: Consultancy</p>
+        </article>
+
+        <article class="project-card p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition" data-text="online condition monitoring transformer bushings coupling capacitors partial discharge monitoring nhpc 2024 2028 r&d co pi ongoing">
+          <h3 class="font-semibold text-lg">Online Condition Monitoring for Bushings & Coupling Capacitors</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Sponsor: NHPC Ltd • Amount: ₹353.26L • Role: Co-PI</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Duration: 2024–2028 • Status: Ongoing • Type: R&D</p>
+        </article>
+
+        <article class="project-card p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition" data-text="lightning arrester leakage current tester megger 2025 26 consultancy pi ongoing">
+          <h3 class="font-semibold text-lg">Lightning Arrester Leakage Current Tester</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Sponsor: Megger Instruments India Ltd • Amount: ₹17.8L • Role: PI</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Duration: 2025–26 • Status: Ongoing • Type: Consultancy</p>
+        </article>
+
+        <article class="project-card p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition" data-text="u hf partial discharge sensor gas insulated systems quantum point 2024 25 consultancy co pi completed">
+          <h3 class="font-semibold text-lg">UHF PD Sensor for Gas Insulated Systems</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Sponsor: Quantum Point Pvt. Ltd • Amount: ₹0.35L • Role: Co-PI</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Duration: 2024–25 • Status: Completed • Type: Consultancy</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supervision -->
+  <section id="supervision" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Research Supervision</h2>
+
+    <!-- Tabs -->
+    <div class="flex gap-2 mb-4">
+      <button class="tab-btn px-4 py-2 rounded-xl bg-brand-light text-white dark:bg-brand-dark" data-tab="mtech">M.Tech</button>
+      <button class="tab-btn px-4 py-2 rounded-xl bg-gray-200 dark:bg-gray-700" data-tab="phd">Ph.D.</button>
+      <input id="supSearch" type="search" placeholder="Search students/topics..." class="ml-auto px-3 py-2 rounded-xl bg-white dark:bg-gray-700 ring-1 ring-gray-200 dark:ring-gray-600 focus:outline-none focus:ring-brand-light dark:focus:ring-brand-dark w-72">
+    </div>
+
+    <!-- MTech Table -->
+    <div id="tab-mtech" class="tab-pane">
+      <div class="overflow-x-auto rounded-2xl ring-1 ring-gray-200 dark:ring-gray-700">
+        <table class="min-w-full text-sm">
+          <thead class="bg-gray-100 dark:bg-gray-800 text-left">
+            <tr>
+              <th class="p-3">Student</th><th class="p-3">Thesis Title</th><th class="p-3">Co-supervisor</th><th class="p-3">Status</th><th class="p-3">Year</th><th class="p-3">Affiliation</th>
+            </tr>
+          </thead>
+          <tbody id="mtechBody" class="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-700">
+            <!-- Rows (subset shown; add others as needed) -->
+            <tr class="sup-row">
+              <td class="p-3">Sayanjit Singha Roy</td>
+              <td class="p-3">PD Source Detection & Classification via Visibility Graphs</td>
+              <td class="p-3">—</td><td class="p-3">Complete</td><td class="p-3">2021</td><td class="p-3">Techno India Univ.</td>
+            </tr>
+            <tr class="sup-row">
+              <td class="p-3">Sudip Modak</td>
+              <td class="p-3">Focal vs Non-focal EEG via Cross Wavelet & Deep Learning</td>
+              <td class="p-3">—</td><td class="p-3">Complete</td><td class="p-3">2021</td><td class="p-3">Techno India Univ.</td>
+            </tr>
+            <tr class="sup-row">
+              <td class="p-3">Kaniska Samanta</td>
+              <td class="p-3">Modified Stockwell Transform for Biopotentials</td>
+              <td class="p-3">—</td><td class="p-3">Complete</td><td class="p-3">2021</td><td class="p-3">Techno India Univ.</td>
+            </tr>
+            <tr class="sup-row">
+              <td class="p-3">Soudip Pal</td>
+              <td class="p-3">Islanding vs Non-islanding Events in Grid-connected PV</td>
+              <td class="p-3">Dr. Ratan Mondal</td><td class="p-3">Complete</td><td class="p-3">2021</td><td class="p-3">Jadavpur Univ.</td>
+            </tr>
+            <tr class="sup-row">
+              <td class="p-3">Samad Sohail</td>
+              <td class="p-3">Aging Characteristics of Insulation System</td>
+              <td class="p-3">—</td><td class="p-3">Complete</td><td class="p-3">2022</td><td class="p-3">BIT Mesra</td>
+            </tr>
+            <tr class="sup-row">
+              <td class="p-3">Prasanth Kumar Balpande</td>
+              <td class="p-3">Defect Detection of SiR Insulators via PD</td>
+              <td class="p-3">—</td><td class="p-3">Complete</td><td class="p-3">2024</td><td class="p-3">NIT Durgapur</td>
+            </tr>
+            <tr class="sup-row">
+              <td class="p-3">Binayak Sahoo</td>
+              <td class="p-3">Non-contact HV Detector for OHTL</td>
+              <td class="p-3">—</td><td class="p-3">Complete</td><td class="p-3">2025</td><td class="p-3">NIT Durgapur</td>
+            </tr>
+            <tr class="sup-row">
+              <td class="p-3">Abhisek Bairwa</td>
+              <td class="p-3">Dielectric Properties of Mineral/Natural Ester Hybrid</td>
+              <td class="p-3">—</td><td class="p-3">Ongoing</td><td class="p-3">2026</td><td class="p-3">NIT Durgapur</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- PhD Table -->
+    <div id="tab-phd" class="tab-pane hidden">
+      <div class="overflow-x-auto rounded-2xl ring-1 ring-gray-200 dark:ring-gray-700">
+        <table class="min-w-full text-sm">
+          <thead class="bg-gray-100 dark:bg-gray-800 text-left">
+            <tr>
+              <th class="p-3">Student</th><th class="p-3">Thesis Title</th><th class="p-3">Other Supervisor</th><th class="p-3">Registration</th><th class="p-3">Status</th><th class="p-3">Role</th>
+            </tr>
+          </thead>
+          <tbody id="phdBody" class="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-700">
+            <tr class="sup-row">
+              <td class="p-3">Ananya Chakraborty</td>
+              <td class="p-3">Transient Disturbances in Power Systems: ML & Signal Processing</td>
+              <td class="p-3">Dr. Ratan Mondal</td>
+              <td class="p-3">Jadavpur Univ.</td>
+              <td class="p-3">Awarded (10 Sep 2024)</td>
+              <td class="p-3">Co-supervisor</td>
+            </tr>
+            <tr class="sup-row">
+              <td class="p-3">Subhajit Mukherjee</td>
+              <td class="p-3">Impact of High Penetration Renewables on Power Systems</td>
+              <td class="p-3">Dr. Ratan Mondal</td>
+              <td class="p-3">Jadavpur Univ.</td>
+              <td class="p-3">Thesis Submitted</td>
+              <td class="p-3">Co-supervisor</td>
+            </tr>
+            <tr class="sup-row">
+              <td class="p-3">Piklu Das</td>
+              <td class="p-3">Intelligent PD Monitoring for High Voltage Apparatus</td>
+              <td class="p-3">Prof. C. Koley</td>
+              <td class="p-3">NIT Durgapur</td>
+              <td class="p-3">Ongoing</td>
+              <td class="p-3">Co-supervisor</td>
+            </tr>
+            <tr class="sup-row">
+              <td class="p-3">Sudip Modak</td>
+              <td class="p-3">Visibility Graph-Based Detection of Biopotential Signals</td>
+              <td class="p-3">Dr. S. Halder</td>
+              <td class="p-3">NIT Durgapur</td>
+              <td class="p-3">Ongoing</td>
+              <td class="p-3">Co-supervisor</td>
+            </tr>
+            <tr class="sup-row">
+              <td class="p-3">Brahma Swarup Laha</td>
+              <td class="p-3">Condition Monitoring of Hybrid Oil–Paper Insulation</td>
+              <td class="p-3">—</td>
+              <td class="p-3">NIT Durgapur</td>
+              <td class="p-3">Ongoing</td>
+              <td class="p-3">Sole Supervisor</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="bg-gray-100 dark:bg-gray-800 py-16 transition-colors duration-500 animate-fadeIn">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-end justify-between gap-4 mb-6">
+        <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark">Selected Recent Publications</h2>
+        <div class="flex gap-2">
+          <input id="pubSearch" type="search" placeholder="Search by title/venue/year..." class="px-3 py-2 rounded-xl bg-white dark:bg-gray-700 ring-1 ring-gray-200 dark:ring-gray-600 focus:outline-none focus:ring-brand-light dark:focus:ring-brand-dark w-72">
+          <select id="pubYear" class="px-3 py-2 rounded-xl bg-white dark:bg-gray-700 ring-1 ring-gray-200 dark:ring-gray-600">
+            <option value="">All Years</option>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+          </select>
+        </div>
+      </div>
+
+      <ul id="pubList" class="space-y-4">
+        <!-- 2025 -->
+        <li class="pub-item p-5 bg-white dark:bg-gray-700 rounded-2xl shadow" data-year="2025" data-text="characterization identification electrical tree stages high voltage cable insulation ieee transactions instrumentation measurement 2025">
+          <span class="text-xs px-2 py-0.5 rounded bg-gray-200 dark:bg-gray-600">2025</span>
+          <p class="mt-2"><b>Roy, S. S.</b>, Paramane, A., Singh, J., <b>Chatterjee, S.</b> “Characterization and Identification of Electrical Tree Growth Stages Inside High-Voltage Cable Insulation.” <i>IEEE Trans. on Instrumentation and Measurement</i> (in press).</p>
+        </li>
+        <li class="pub-item p-5 bg-white dark:bg-gray-700 rounded-2xl shadow" data-year="2025" data-text="eeg rhythm functional brain connectivity detection schizophrenia deep learning ieee transactions instrumentation measurement 2025">
+          <span class="text-xs px-2 py-0.5 rounded bg-gray-200 dark:bg-gray-600">2025</span>
+          <p class="mt-2"><b>Modak, S.</b>, Samanta, K., <b>Chatterjee, S.</b>, Halder, S. “EEG Rhythm-Based Functional Brain Connectivity for Automated Detection of Schizophrenia.” <i>IEEE Trans. on Instrumentation and Measurement</i> (in press).</p>
+        </li>
+
+        <!-- 2024 -->
+        <li class="pub-item p-5 bg-white dark:bg-gray-700 rounded-2xl shadow" data-year="2024" data-text="recurrence plot deep learning transformer insulation ftir ieee transactions industry applications 2024">
+          <span class="text-xs px-2 py-0.5 rounded bg-gray-200 dark:bg-gray-600">2024</span>
+          <p class="mt-2"><b>Das, S.</b>, Paramane, A., <b>Chatterjee, S.</b>, Mishra, P. “Recurrence Plot–aided Deep Learning Framework for Condition Monitoring of Transformer Insulation Using FTIR.” <i>IEEE Trans. on Industry Applications</i>, 60(6):8393-8402.</p>
+        </li>
+        <li class="pub-item p-5 bg-white dark:bg-gray-700 rounded-2xl shadow" data-year="2024" data-text="recurrence plot partial discharge detection hfct cnn ieee transactions dielectrics electrical insulation 2024">
+          <span class="text-xs px-2 py-0.5 rounded bg-gray-200 dark:bg-gray-600">2024</span>
+          <p class="mt-2"><b>Das, P.</b>, <b>Chatterjee, S.</b>, Koley, C. “Recurrence Plot Aided Partial Discharge Detection Employing HFCT Sensor and Custom CNN.” <i>IEEE Trans. on Dielectrics and Electrical Insulation</i>, 31(6):2947-2955.</p>
+        </li>
+        <li class="pub-item p-5 bg-white dark:bg-gray-700 rounded-2xl shadow" data-year="2024" data-text="ageing insulating oils ftir deep learning ieee transactions dielectrics electrical insulation 2024">
+          <span class="text-xs px-2 py-0.5 rounded bg-gray-200 dark:bg-gray-600">2024</span>
+          <p class="mt-2"><b>Das, S.</b>, Paramane, A., <b>Chatterjee, S.</b>, Maharana, M. “Quantification of Ageing State of Insulating Oils Using FTIR & Deep Learning.” <i>IEEE Trans. on Dielectrics and Electrical Insulation</i>, 31(4):1936-1943.</p>
+        </li>
+
+        <!-- 2023 -->
+        <li class="pub-item p-5 bg-white dark:bg-gray-700 rounded-2xl shadow" data-year="2023" data-text="pd pulse sequence classification bidirectional lstm ieee transactions plasma science 2023">
+          <span class="text-xs px-2 py-0.5 rounded bg-gray-200 dark:bg-gray-600">2023</span>
+          <p class="mt-2">Das, R., Das, A. K., Chakraborty, B., <b>Chatterjee, S.</b>, et al. “Morphology + Bi-LSTM for PD Pulse Sequence Classification.” <i>IEEE Trans. on Plasma Science</i>, 51(12):3454-3461.</p>
+        </li>
+      </ul>
+
+      <details class="mt-6">
+        <summary class="cursor-pointer text-sm underline">Show older representative items (IET/IEEE Sensors & more)</summary>
+        <div class="mt-4 space-y-3 text-sm">
+          <p>Temperature Compensation for FDS in Oil-Paper Insulation — <i>IEEE TDEI</i>, 2022.</p>
+          <p>Hydrophobicity Class Recognition of Polymeric Insulators — <i>IEEE TIM</i>, 2022.</p>
+          <p>Accurate Sensing of Transformer Faults from DGA — <i>IEEE Sensors Journal</i>, 2022.</p>
+          <p>Myopathy vs ALS EMG using Modified W-ST — <i>IEEE Sensors Letters</i>, 2019.</p>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Contact</h2>
+    <div class="space-y-2 text-gray-700 dark:text-gray-300">
+      <p><b>Email:</b> schatterjee.ee@nitdgp.ac.in</p>
+      <p><b>Affiliation:</b> Department of Electrical Engineering, NIT Durgapur</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center text-gray-600 dark:text-gray-400">
+    © 2025 Dr. Soumya Chatterjee • NIT Durgapur
+  </footer>
+
+  <!-- Scripts: Dark mode, Tabs, Filters -->
+  <script>
+    // Dark mode
+    const themeToggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+    if (localStorage.getItem("theme") === "dark") { html.classList.add("dark"); themeToggle.textContent = "☀️"; }
+    themeToggle.addEventListener("click", () => {
+      html.classList.toggle("dark");
+      const isDark = html.classList.contains("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      themeToggle.textContent = isDark ? "☀️" : "🌙";
+    });
+
+    // Project search
+    const projectSearch = document.getElementById('projectSearch');
+    const projectCards = [...document.querySelectorAll('.project-card')];
+    projectSearch.addEventListener('input', e => {
+      const q = e.target.value.toLowerCase();
+      projectCards.forEach(card => {
+        card.style.display = card.dataset.text.includes(q) ? '' : 'none';
+      });
+    });
+
+    // Supervision tabs + search
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const panes = { mtech: document.getElementById('tab-mtech'), phd: document.getElementById('tab-phd') };
+    tabButtons.forEach(btn => btn.addEventListener('click', () => {
+      tabButtons.forEach(b => b.classList.remove('bg-brand-light','text-white','dark:bg-brand-dark'));
+      btn.classList.add('bg-brand-light','text-white','dark:bg-brand-dark');
+      Object.values(panes).forEach(p => p.classList.add('hidden'));
+      panes[btn.dataset.tab].classList.remove('hidden');
+    }));
+    const supSearch = document.getElementById('supSearch');
+    const supRows = () => [...document.querySelectorAll('#supervision .sup-row')];
+    supSearch.addEventListener('input', e => {
+      const q = e.target.value.toLowerCase();
+      supRows().forEach(row => {
+        row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    });
+
+    // Publications filter & search
+    const pubSearch = document.getElementById('pubSearch');
+    const pubYear = document.getElementById('pubYear');
+    const pubItems = [...document.querySelectorAll('.pub-item')];
+    function filterPubs() {
+      const q = pubSearch.value.toLowerCase();
+      const y = pubYear.value;
+      pubItems.forEach(item => {
+        const matchText = item.dataset.text.includes(q);
+        const matchYear = !y || item.dataset.year === y;
+        item.style.display = (matchText && matchYear) ? '' : 'none';
+      });
+    }
+    pubSearch.addEventListener('input', filterPubs);
+    pubYear.addEventListener('change', filterPubs);
+  </script>
+</body>
+</html>

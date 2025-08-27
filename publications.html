@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications • Dr. Soumya Chatterjee</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              light: '#6366f1',  /* Indigo */
+              dark: '#a78bfa',   /* Purple */
+            },
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition duration-500">
+
+<!-- Navbar -->
+<header class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-md sticky top-0 z-50 transition">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-brand-light dark:text-brand-dark">Dr. Soumya Chatterjee</a>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="about.html" class="hover:text-brand-light dark:hover:text-brand-dark">About</a>
+        <a href="research.html" class="hover:text-brand-light dark:hover:text-brand-dark">Research</a>
+        <a href="publications.html" class="hover:text-brand-light dark:hover:text-brand-dark">Publications</a>
+        <a href="teaching.html" class="hover:text-brand-light dark:hover:text-brand-dark">Teaching</a>
+        <a href="awards.html" class="hover:text-brand-light dark:hover:text-brand-dark">Awards</a>
+        <a href="contact.html" class="hover:text-brand-light dark:hover:text-brand-dark">Contact</a>
+      </nav>
+      <!-- Dark Mode Toggle -->
+      <button id="theme-toggle" class="ml-4 p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+        🌙
+      </button>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+<section class="py-20 text-center">
+  <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text 
+             bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 mb-6">
+    Publications
+  </h1>
+  <p class="text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">
+    A collection of all publications by Dr. Soumya Chatterjee. View all on 
+    <a href="https://scholar.google.com/citations?hl=en&user=fASc5B0AAAAJ" 
+       class="text-brand-light dark:text-brand-dark font-semibold hover:underline">Google Scholar</a>.
+  </p>
+</section>
+
+<!-- Search Section -->
+<section class="max-w-4xl mx-auto px-6 py-6">
+  <div class="flex flex-col md:flex-row gap-4 items-center justify-center">
+    <input id="yearInput" type="number" placeholder="Enter Year (e.g. 2023)" 
+           class="w-full md:w-1/3 p-2 rounded-lg border dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200">
+    <input id="citationsInput" type="number" placeholder="Min Citations" 
+           class="w-full md:w-1/3 p-2 rounded-lg border dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200">
+    <button onclick="filterPublications()" 
+            class="px-6 py-2 bg-brand-light text-white font-semibold rounded-xl shadow hover:bg-indigo-700 transition">
+      Search
+    </button>
+    <button onclick="resetFilter()" 
+            class="px-6 py-2 bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-gray-200 font-semibold rounded-xl shadow hover:bg-gray-400 dark:hover:bg-gray-600 transition">
+      Reset
+    </button>
+  </div>
+</section>
+
+<!-- Placeholder for publication cards (from Python script) -->
+
+<section class="py-12 max-w-6xl mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-6 text-brand-light dark:text-brand-dark">Publications</h2>
+  <div id="pubGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2025" data-citations="2">
+        <h3 class="font-semibold text-md mb-1">Deep learning aided power quality disturbance detection with improved time–frequency resolution employing adaptive superlet transform</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2025 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 2</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2025" data-citations="1">
+        <h3 class="font-semibold text-md mb-1">Improved machine learning framework for prediction of phases and crystal structures of high entropy alloys</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2025 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 1</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2025" data-citations="1">
+        <h3 class="font-semibold text-md mb-1">Condition Monitoring of Polymeric Insulators: A Remote Diagnostic Framework With Improved Intermediate Hydrophobicity Grade Detection</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2025 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 1</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2025" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Image Visibility Patch-Aided Partial Discharge Recognition Framework for Identifying Defects in XLPE Cables</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2025 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2025" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Physiochemical and Thermal Assessment of Mineral oil Aged Silicone Rubber Nano/Micro Composites</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2025 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2025" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Surface Morphological and Infrared Thermographic Assessment of Natural Ester Oil Aged Silicone Rubber Microcomposites</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2025 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2025" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Autocorrelation Aided Rhythm-Based Healthy and Epileptic Electroencephalogram Signals Detection</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2025 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2025" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">EEG Rhythm-Based Functional Brain Connectivity for Automated Detection of Schizophrenia Employing Deep Learning</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2025 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2024" data-citations="10">
+        <h3 class="font-semibold text-md mb-1">Recurrence Plot-Aided Partial Discharge Detection Framework Employing HFCT Sensor and Customized Convolutional Neural Network</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2024 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 10</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2024" data-citations="5">
+        <h3 class="font-semibold text-md mb-1">Power quality recognition in noisy environment employing deep feature extraction from cross stockwell spectrum time–frequency images</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2024 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 5</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2024" data-citations="3">
+        <h3 class="font-semibold text-md mb-1">Comparison of harmonics mitigation techniques for grid-connected pv system and introduction of a concept of hybrid filter</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2024 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 3</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2024" data-citations="2">
+        <h3 class="font-semibold text-md mb-1">Time-Frequency Image Representation Aided Deep Feature Extraction-Based Grid Connected Solar PV Fault Classification Framework</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2024 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 2</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2024" data-citations="1">
+        <h3 class="font-semibold text-md mb-1">Recurrence Plot-Aided Deep Learning Framework for Condition Monitoring of Transformer Insulation Using Fourier Transform Infrared Spectroscopy</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2024 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 1</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2024" data-citations="1">
+        <h3 class="font-semibold text-md mb-1">Quantification of Aging State of Insulating Oils Using FTIR Spectra and Deep Learning</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2024 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 1</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2024" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Investigations on Physico-Chemical Properties of Natural Ester Oil-Impregnated paper Insulation Under Accelerated Thermal Ageing</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2024 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2024" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Investigations on the Dielectric Properties of Mineral Oil and Natural Ester Mixed Liquid Insulation for Power Transformers</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2024 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2024" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Modeling of the Dielectric Response of XLPE Cable Insulation: Insights from Accelerated Water Tree Aging Experiments</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2024 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="27">
+        <h3 class="font-semibold text-md mb-1">Sensing incipient faults in power transformers using bi-directional long short-term memory network</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 27</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="18">
+        <h3 class="font-semibold text-md mb-1">Corrosive dibenzyl disulfide concentration prediction in transformer oil using deep neural network</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 18</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="10">
+        <h3 class="font-semibold text-md mb-1">A novel deep-learning framework to identify and locate single and multiple partial discharge events</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 10</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="7">
+        <h3 class="font-semibold text-md mb-1">Characterization and identification of electrical tree growth stages inside high-voltage cable insulation</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 7</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="5">
+        <h3 class="font-semibold text-md mb-1">Automated Space Charge Classification Inside±500-kV HVDC Cable Insulation Using Fusion of Superpixel and Deep Features for Remote Condition Assessment</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 5</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="4">
+        <h3 class="font-semibold text-md mb-1">Nesterov-type accelerated admm (n-admm) with adaptive penalty for three-phase distributed opf under non-ideal data transfer scenarios</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 4</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="4">
+        <h3 class="font-semibold text-md mb-1">Mathematical morphology-aided bidirectional long short-term memory network-based partial discharge pulse sequence classification</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 4</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="3">
+        <h3 class="font-semibold text-md mb-1">Image visibility patch aided hydrophobic class detection of silicone rubber insulators employing bi-LSTM network</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 3</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="3">
+        <h3 class="font-semibold text-md mb-1">Deep learning aided classification of ageing condition of natural ester oils using FTIR analysis</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 3</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="2">
+        <h3 class="font-semibold text-md mb-1">Sensing the Thermal Aging of Rotating Machine Insulation Using a Unique Parameter Extracted From Dielectric Spectroscopy Measurement</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 2</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Autocorrelation Aided Rhythm-Based Healthy and Epileptic Electroencephalogram Signals Detection Framework</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Comparative Study and Performance Analysis for a Static and Rotating Inverter of PV Integrated Power System</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Effect of Transformer oil on Silicon Rubber Nano-Micro Composites</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2023" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Autocorrelation Aided Islanding Detection Using bi-directional Long-short Type Memory Network</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2023 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="74">
+        <h3 class="font-semibold text-md mb-1">Accurate sensing of power transformer faults from dissolved gas data using random forest classifier aided by data clustering method</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 74</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="50">
+        <h3 class="font-semibold text-md mb-1">Accurate identification of transformer faults from dissolved gas data using recursive feature elimination method</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 50</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="27">
+        <h3 class="font-semibold text-md mb-1">Accurate detection of bearing faults using difference visibility graph and bi-directional long short-term memory network classifier</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 27</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="20">
+        <h3 class="font-semibold text-md mb-1">Temperature compensation of frequency domain spectroscopy measurement for condition assessment of oil-paper insulation</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 20</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="13">
+        <h3 class="font-semibold text-md mb-1">Accurate sensing of insulator surface contamination using customized convolutional neural network</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 13</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="13">
+        <h3 class="font-semibold text-md mb-1">Recognition of hydrophobicity class of polymeric insulators employing residual morphological neural network and granulometry-based image analysis</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 13</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="11">
+        <h3 class="font-semibold text-md mb-1">Neuromuscular disease detection based on feature extraction from time–frequency images of EMG signals employing robust hyperbolic Stockwell transform</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 11</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="11">
+        <h3 class="font-semibold text-md mb-1">Estimation of moisture content in XLPE cable insulation using electric modulus</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 11</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="10">
+        <h3 class="font-semibold text-md mb-1">Remote condition monitoring of HVDC cable insulation using deep learning-aided space charge classification</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 10</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="9">
+        <h3 class="font-semibold text-md mb-1">Cross spectrum aided surface condition assessment of metal oxide surge arrester employing convolutional neural network</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 9</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="5">
+        <h3 class="font-semibold text-md mb-1">Deep learning technique for recurrence plot-based classification of power quality disturbances</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 5</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="4">
+        <h3 class="font-semibold text-md mb-1">Time-frequency representation aided deep transfer learning approach for localization and identification of single and multiple partial discharge events</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 4</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="4">
+        <h3 class="font-semibold text-md mb-1">Convolutional neural network and Bi‐directional long short memory hybrid deep network aided infrared image classification framework for non‐contact monitoring of overhead …</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 4</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="4">
+        <h3 class="font-semibold text-md mb-1">Accurate hydrophobicity grade detection of polymeric insulators in extremely wetted and humid environments using Bi-LSTM neural network classifier</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 4</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="3">
+        <h3 class="font-semibold text-md mb-1">Estimation of Epoxy-Mica Insulation Ageing Through Havriliak-Negami Relaxation Model on Dielectric Modulus Spectrum</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 3</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="2">
+        <h3 class="font-semibold text-md mb-1">Deep learning-based discrimination of focal electroencephalogram signals employing cross stockwell transform</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 2</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="2">
+        <h3 class="font-semibold text-md mb-1">Hydrophobicity Grade Detection of Polymeric Insulator Using Image Visibility Graph</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 2</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="2">
+        <h3 class="font-semibold text-md mb-1">Recursive feature elimination aided accurate fault classification in power transformers using dissolved gas data</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 2</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="1">
+        <h3 class="font-semibold text-md mb-1">Estimation of Thermal Aging of Epoxy-Alumina Nano-Composites for Dry-Type High Voltage Insulation Using Dielectric Modulus</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 1</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2022" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Estimation of Paper Moisture within Vegetable Oil based Hybrid Nanofluid Impregnated Paper Using Capacitance Ratio</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2022 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2021" data-citations="24">
+        <h3 class="font-semibold text-md mb-1">Focal epileptic area recognition employing cross EEG rhythm spectrum images and convolutional neural network</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2021 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 24</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2021" data-citations="16">
+        <h3 class="font-semibold text-md mb-1">Sensing the thermal aging of epoxy alumina nano-composites using electric modulus</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2021 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 16</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2021" data-citations="4">
+        <h3 class="font-semibold text-md mb-1">Estimation of activation energy of transformer insulation from frequency domain spectroscopy measurement performed at a particular temperature</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2021 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 4</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2021" data-citations="4">
+        <h3 class="font-semibold text-md mb-1">Equivalent circuit modelling of transformer oil-paper insulation from frequency domain spectroscopy measurements</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2021 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 4</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2021" data-citations="2">
+        <h3 class="font-semibold text-md mb-1">Condition Monitoring of Epoxy Mica Composite Insulation Used in Rotating Machines Employing Electric Modulus</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2021 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 2</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2021" data-citations="1">
+        <h3 class="font-semibold text-md mb-1">Estimation of Moisture Content of Oil-Paper Insulation in Transformers Using Electric Modulus</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2021 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 1</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2021" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Detection of Epileptic Electroencephalogram Signals Employing Visibility Graph Motifs</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2021 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="180">
+        <h3 class="font-semibold text-md mb-1">Autocorrelation aided random forest classifier-based bearing fault detection framework</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 180</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="29">
+        <h3 class="font-semibold text-md mb-1">Sensing wettability condition of insulation surface employing convolutional neural network</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 29</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="20">
+        <h3 class="font-semibold text-md mb-1">Estimation of conductivity at reduced time for sensing moisture content of oil-paper insulation</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 20</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="18">
+        <h3 class="font-semibold text-md mb-1">Cross spectrum aided deep feature extraction based neuromuscular disease detection framework</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 18</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="17">
+        <h3 class="font-semibold text-md mb-1">Feature extraction from multifractal spectrum of electromyograms for diagnosis of neuromuscular disorders</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 17</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="16">
+        <h3 class="font-semibold text-md mb-1">Augmenting neuromuscular disease detection using optimally parameterized weighted visibility graph</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 16</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="15">
+        <h3 class="font-semibold text-md mb-1">Partial discharge detection framework employing spectral analysis of horizontal visibility graph</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 15</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="12">
+        <h3 class="font-semibold text-md mb-1">Hand movement recognition using cross spectrum image analysis of EMG signals-A deep learning approach</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 12</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="12">
+        <h3 class="font-semibold text-md mb-1">Detection of focal EEG signals employing weighted visibility graph</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 12</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="9">
+        <h3 class="font-semibold text-md mb-1">Neuromuscular disease detection employing deep feature extraction from cross spectrum images of electromyography signals</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 9</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="7">
+        <h3 class="font-semibold text-md mb-1">Complex network aided partial discharge signal recognition framework employing visibility graph</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 7</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="5">
+        <h3 class="font-semibold text-md mb-1">Neuromuscular disease detection employing 1D-local binary pattern of electromyography signals</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 5</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="3">
+        <h3 class="font-semibold text-md mb-1">Bearing fault detection in induction motors employing difference visibility graph</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 3</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="2">
+        <h3 class="font-semibold text-md mb-1">Cross-wavelet transform aided focal and non-focal electroencephalography signal classification employing deep feature extraction</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 2</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2020" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">A deep learning framework for emotion recognition using improved time–frequency image analysis of electroencephalography signals</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2020 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="52">
+        <h3 class="font-semibold text-md mb-1">Cross-subject motor imagery tasks EEG signal classification employing multiplex weighted visibility graph and deep feature extraction</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 52</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="52">
+        <h3 class="font-semibold text-md mb-1">Detection of epileptic seizure employing a novel set of features extracted from multifractal spectrum of electroencephalogram signals</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 52</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="26">
+        <h3 class="font-semibold text-md mb-1">Detection of myopathy and ALS electromyograms employing modified window Stockwell transform</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 26</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="25">
+        <h3 class="font-semibold text-md mb-1">Detection of focal electroencephalogram signals using higher‐order moments in EMD‐TKEO domain</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 25</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="16">
+        <h3 class="font-semibold text-md mb-1">A non-linear model for sensing moisture content in transformers at reduced time</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 16</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="12">
+        <h3 class="font-semibold text-md mb-1">Diagnosis of induction motor faults using frequency occurrence image plots—a deep learning approach</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 12</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="12">
+        <h3 class="font-semibold text-md mb-1">Autocorrelation based feature extraction for bearing fault detection in induction motors</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 12</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="10">
+        <h3 class="font-semibold text-md mb-1">Accelerating moisture content sensing of oil-impregnated paper insulation using frequency modulated square wave excitations</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 10</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="8">
+        <h3 class="font-semibold text-md mb-1">Motor imagery classification enhancement with concurrent implementation of spatial filtration and modified stockwell transform</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 8</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="2">
+        <h3 class="font-semibold text-md mb-1">Stress Control on RTV Coated Porcelain Disc Insulator using BaTiO3 Nano-composites in Presence of Dry bands</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 2</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">XT orginal article T.</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">Studies on measurement time reduction techniques for insulation diagnostics in high voltage equipment</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2019" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">31 Motor imagery classification enhancement with concurrent implementation of spatial filtration and modified stockwell transform</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2019 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2018" data-citations="25">
+        <h3 class="font-semibold text-md mb-1">Use of chirp excitations for frequency domain spectroscopy measurement of oil-paper insulation</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2018 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 25</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2018" data-citations="15">
+        <h3 class="font-semibold text-md mb-1">Epileptic seizure detection employing cross-hyperbolic stockwell transform</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2018 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 15</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2018" data-citations="9">
+        <h3 class="font-semibold text-md mb-1">Detection of healthy and neuropathy electromyograms employing Stockwell transform</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2018 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 9</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2018" data-citations="2">
+        <h3 class="font-semibold text-md mb-1">Conductivity estimation for reliable assessment of power transformer insulation at reduced time</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2018 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 2</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2017" data-citations="66">
+        <h3 class="font-semibold text-md mb-1">Multifractal detrended fluctuation analysis based novel feature extraction technique for automated detection of focal and non‐focal electroencephalogram signals<? show [AQ ID …</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2017 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 66</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2017" data-citations="49">
+        <h3 class="font-semibold text-md mb-1">Detection of epileptic seizure and seizure‐free EEG signals employing generalised S‐transform</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2017 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 49</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2017" data-citations="28">
+        <h3 class="font-semibold text-md mb-1">Detection of epilepsy based on discrete wavelet transform and Teager-Kaiser energy operator</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2017 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 28</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2017" data-citations="21">
+        <h3 class="font-semibold text-md mb-1">Reducing frequency domain spectroscopy measurement time for condition monitoring of transformer oil‐paper insulation using non‐sinusoidal excitations</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2017 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 21</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2017" data-citations="8">
+        <h3 class="font-semibold text-md mb-1">A method to accelerate FDS measurement using logarithmic chirp excitation voltage</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2017 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 8</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2017" data-citations="1">
+        <h3 class="font-semibold text-md mb-1">Recognition of power system transients based on higher order statistical moments using empirical mode decomposition</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2017 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 1</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2016" data-citations="33">
+        <h3 class="font-semibold text-md mb-1">Cross-correlation based feature extraction from EMG signals for classification of neuro-muscular diseases</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2016 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 33</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2016" data-citations="16">
+        <h3 class="font-semibold text-md mb-1">Condition assessment of outdoor porcelain insulator based on dielectric dissipation factor evaluated from non‐linear equivalent circuit</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2016 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 16</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2016" data-citations="15">
+        <h3 class="font-semibold text-md mb-1">Electric stress analysis of a 11kV RTV silicone rubber coated porcelain insulator</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2016 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 15</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2016" data-citations="5">
+        <h3 class="font-semibold text-md mb-1">Electric stress analysis of a contaminated polymeric insulating surface in presence of dry bands</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2016 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 5</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2016" data-citations="5">
+        <h3 class="font-semibold text-md mb-1">Electric field computation in presence of water droplets on a polymeric insulating surface</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2016 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 5</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2016" data-citations="5">
+        <h3 class="font-semibold text-md mb-1">Transient analysis of mechanically switched capacitors with and without damping network connected to AC grid</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2016 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 5</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2016" data-citations="4">
+        <h3 class="font-semibold text-md mb-1">Design of grading material for electric stress control in a polymeric disc insulator</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2016 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 4</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2016" data-citations="3">
+        <h3 class="font-semibold text-md mb-1">Comparative study of electrode configurations in different brain tumor geometry for effective Electrochemotherapy</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2016 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 3</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2015" data-citations="15">
+        <h3 class="font-semibold text-md mb-1">Influence of viscosity and conductivity of water droplets on partial discharge inception voltages of polymeric insulating surfaces</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2015 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 15</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2015" data-citations="13">
+        <h3 class="font-semibold text-md mb-1">Electric field enhancement in an XLPE insulated power cable containing different voids and portrusions</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2015 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 13</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2015" data-citations="10">
+        <h3 class="font-semibold text-md mb-1">Identification of salt and salinity level of 11kV contaminated porcelian disc insulator using STD-MRA analysis of leakage current</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2015 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 10</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2015" data-citations="5">
+        <h3 class="font-semibold text-md mb-1">An advanced technique for frequency domain spectroscopy of oil-paper insulation at reduced time using triangular excitation</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2015 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 5</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2015" data-citations="2">
+        <h3 class="font-semibold text-md mb-1">Estimation of damping resistor in mechanically switched capacitor with damping network at different tuning frequencies during switching</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2015 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 2</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="2010" data-citations="12">
+        <h3 class="font-semibold text-md mb-1">A novel proposal for detection of avian influenza and managing poultry in a cost efficient way implementing RFID</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">2010 - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 12</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    
+    <div class="pub-card p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition-transform duration-300" 
+         data-year="N/A" data-citations="0">
+        <h3 class="font-semibold text-md mb-1">CNN-BiLSTM Hybrid Deep Network Aided Infra-Red Image Classification Framework for Non-contact Monitoring of Overhead Insulators</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">N/A - N/A</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Citations: 0</p>
+        <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en&oi=sra"
+           class="text-blue-600 dark:text-purple-400 hover:underline text-sm">View on Google Scholar</a>
+    </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center text-gray-600 dark:text-gray-400">
+  © 2025 Dr. Soumya Chatterjee. NIT Durgapur
+</footer>
+
+<!-- Scripts -->
+<script>
+function filterPublications() {
+  let yearFilter = document.getElementById("yearInput").value.trim();
+  let citationFilter = document.getElementById("citationsInput").value.trim();
+  citationFilter = citationFilter ? parseInt(citationFilter) : 0;
+
+  let cards = document.querySelectorAll(".pub-card");
+
+  cards.forEach(card => {
+    let year = card.getAttribute("data-year");
+    let citations = parseInt(card.getAttribute("data-citations"));
+    let show = true;
+
+    if (yearFilter && year !== yearFilter) {
+      show = false;
+    }
+    if (citations < citationFilter) {
+      show = false;
+    }
+
+    card.style.display = show ? "block" : "none";
+  });
+}
+
+function resetFilter() {
+  document.getElementById("yearInput").value = "";
+  document.getElementById("citationsInput").value = "";
+  document.querySelectorAll(".pub-card").forEach(card => {
+    card.style.display = "block";
+  });
+}
+
+// 🌙 Dark/Light Theme Toggle with Persistence
+const themeToggle = document.getElementById("theme-toggle");
+const html = document.documentElement;
+
+if(localStorage.getItem("theme") === "dark"){
+  html.classList.add("dark");
+  themeToggle.textContent = "☀️";
+}
+
+themeToggle.addEventListener("click", () => {
+  html.classList.toggle("dark");
+  if(html.classList.contains("dark")){
+    localStorage.setItem("theme","dark");
+    themeToggle.textContent = "☀️";
+  } else {
+    localStorage.setItem("theme","light");
+    themeToggle.textContent = "🌙";
+  }
+});
+</script>
+
+</body>
+</html>

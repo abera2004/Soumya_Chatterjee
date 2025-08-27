@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Soumya Chatterjee • Faculty Website</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              light: '#2563eb',
+              dark: '#3b82f6',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 font-sans transition-colors duration-500">
+
+  <!-- Navbar -->
+  <header class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-md sticky top-0 z-50 transition">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl md:text-2xl font-bold text-brand-light dark:text-brand-dark">Dr. Soumya Chatterjee</h1>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="about.html" class="hover:text-brand-light dark:hover:text-brand-dark">About</a>
+        <a href="research.html" class="hover:text-brand-light dark:hover:text-brand-dark">Research</a>
+        <a href="publications.html" class="hover:text-brand-light dark:hover:text-brand-dark">Publications</a>
+        <a href="teaching.html" class="hover:text-brand-light dark:hover:text-brand-dark">Teaching</a>
+        <a href="awards.html" class="hover:text-brand-light dark:hover:text-brand-dark">Awards</a>
+        <a href="contact.html" class="hover:text-brand-light dark:hover:text-brand-dark">Contact</a>
+      </nav>
+      <!-- Dark Mode Toggle -->
+      <button id="theme-toggle" class="ml-4 p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative py-20 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 transition">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 gap-12">
+      <img src="Profile_Pic.jpg" alt="Faculty Photo" 
+           class="rounded-3xl shadow-2xl w-52 h-52 object-cover ring-4 ring-brand-light dark:ring-brand-dark">
+      
+      <div>
+        <h2 class="flip-text text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text 
+                   bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+          Dr. Soumya Chatterjee
+        </h2>
+
+        <p class="text-lg mt-3 text-gray-700 dark:text-gray-300 
+                transition duration-300 hover:text-brand-light dark:hover:text-brand-dark hover:scale-105">
+          Assistant Professor of Electrical Engineering <br>
+          National Institute of Technology Durgapur, India
+        </p>
+
+        <p class="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl 
+                transition duration-300 hover:text-brand-light dark:hover:text-brand-dark hover:scale-105">
+          My research focuses on insulation diagnostics, condition monitoring of high-voltage equipment, 
+          graph theory, and signal & image processing applications in electrical systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom CSS for Flip Animation -->
+  <style>
+    .flip-text {
+      display: inline-block;
+      animation: flip 4s infinite;
+      transform-style: preserve-3d;
+    }
+    @keyframes flip {
+      0%   { transform: rotateY(0deg); }
+      40%  { transform: rotateY(360deg); }
+      100% { transform: rotateY(360deg); }
+    }
+  </style>
+
+  <!-- About -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h3 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">About</h3>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl">
+      Dr. Soumya Chatterjee is an Assistant Professor in the Department of Electrical Engineering at 
+      <b>National Institute of Technology, Durgapur</b>. He received his Ph.D. in Electrical Engineering 
+      from <b>Jadavpur University, Kolkata</b> (2019), MSc in Electrical Power Engineering from 
+      <b>Technische Universität Darmstadt, Germany</b> (2014), and B.E. in Electrical Engineering from 
+      <b>Jadavpur University</b> (2009). His professional journey spans academia and industry with expertise 
+      in <b>high-voltage engineering</b>, <b>condition monitoring</b>, <b>and applied signal processing.</b>
+    </p>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="bg-gray-100 dark:bg-gray-800 py-16 transition-colors duration-500 animate-fadeIn">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-10">Research Interests</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg mb-2">Insulation Diagnosis</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Condition monitoring of high-voltage equipment.</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg mb-2">Condition Monitoring</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Online/accelerated techniques and sensors.</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg mb-2">Graph Theory & Complex Network.</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Visibility graphs for signal characterization.</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg mb-2">Signal & Image Processing</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Deep learning for electrical/biomedical data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h3 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Selected Publications</h3>
+    <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+      <li class="hover:text-brand-light dark:hover:text-brand-dark transition"><b>Chatterjee, S.</b>, et al. (2025). "Characterization and Identification of Electrical Tree Growth Stages Inside High-Voltage Cable Insulation." <i>IEEE Transactions on Instrumentation and Measurement</i>.</li>
+      <li class="hover:text-brand-light dark:hover:text-brand-dark transition"><b>Chatterjee, S.</b>, et al. (2024). "Recurrence Plot-aided Deep Learning Framework for Condition Monitoring of Transformer Insulation." <i>IEEE Transactions on Industry Applications</i>.</li>
+      <li class="hover:text-brand-light dark:hover:text-brand-dark transition"><b>Chatterjee, S.</b>, et al. (2023). "A Novel Deep Learning Framework to Identify and Locate Partial Discharge Events." <i>IEEE Transactions on Dielectrics and Electrical Insulation</i>.</li>
+    </ul>
+    <p class="mt-4">
+      👉 Full publication list: 
+      <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en" target="_blank" class="text-brand-light dark:text-brand-dark underline">Google Scholar</a> |
+      <a href="https://publons.com/researcher/1451092/soumya-chatterjee/" target="_blank" class="text-brand-light dark:text-brand-dark underline">Publons</a>
+    </p>
+  </section>
+
+  <!-- Teaching -->
+  <section id="teaching" class="bg-gray-100 dark:bg-gray-800 py-16 transition-colors duration-500 animate-fadeIn">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Teaching</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg mb-2">Electromagnetic Field Theory</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-300">UG Course</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg mb-2">Condition Monitoring & Intelligent Systems</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-300">PG Course</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg mb-2">Electrical Engineering Materials</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-300">UG Course</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section id="awards" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h3 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Awards & Honors</h3>
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-2">
+     <li>National Scholarship by Government of India in 2003.</li>
+      <li>Vidyasagar Scholarship by Nava Nalanda High School, India in 2003.</li>
+      <li>National Scholarship by MHRD Government of India, in 2005.</li>
+      <li>Junior Research Fellowship by Jadavpur University, India in 2014.</li>
+      <li>Best Research Paper award in IEEE International Conference (ICCECE) in 2019.</li>
+      <li>Associate Fellow, West Bengal Academy of Science and Technology, 2024.</li>
+      <li>Treasurer, IEEE DEIS Kolkata Chapter (2023–present).</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h3 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Contact</h3>
+    <div class="space-y-2 text-gray-700 dark:text-gray-300">
+      <p><b>Email:</b> chapeshwar@gmail.com / schatterjee.ee@nitdgp.ac.in</p>
+      <p><b>Office:</b> Department of Electrical Engineering, NIT Durgapur, India</p>
+      <p><b>Phone:</b> +91-9051016652 / +91-9123770668</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center text-gray-600 dark:text-gray-400">
+    © 2025 Dr. Soumya Chatterjee • NIT Durgapur
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+
+    if(localStorage.getItem("theme") === "dark"){
+      html.classList.add("dark");
+      themeToggle.textContent = "☀️";
+    }
+
+    themeToggle.addEventListener("click", () => {
+      html.classList.toggle("dark");
+      if(html.classList.contains("dark")){
+        localStorage.setItem("theme","dark");
+        themeToggle.textContent = "☀️";
+      } else {
+        localStorage.setItem("theme","light");
+        themeToggle.textContent = "🌙";
+      }
+    });
+  </script>
+
+  <!-- Animations -->
+  <style>
+    .animate-fadeIn { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
+  </style>
+
+</body>
+</html>

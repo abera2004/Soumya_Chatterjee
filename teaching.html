@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumya Chatterjee • Teaching</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: { brand: { light: '#2563eb', dark: '#3b82f6' } }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 font-sans transition-colors duration-500">
+
+  <!-- Navbar -->
+  <header class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-md sticky top-0 z-50 transition">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-brand-light dark:text-brand-dark">Dr. Soumya Chatterjee</a>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="about.html" class="hover:text-brand-light dark:hover:text-brand-dark">About</a>
+        <a href="research.html" class="hover:text-brand-light dark:hover:text-brand-dark">Research</a>
+        <a href="publications.html" class="hover:text-brand-light dark:hover:text-brand-dark">Publications</a>
+        <a href="teaching.html" class="hover:text-brand-light dark:hover:text-brand-dark">Teaching</a>
+        <a href="awards.html" class="hover:text-brand-light dark:hover:text-brand-dark">Awards</a>
+        <a href="contact.html" class="hover:text-brand-light dark:hover:text-brand-dark">Contact</a>
+      </nav>
+      <!-- Dark Mode Toggle -->
+      <button id="theme-toggle" class="ml-4 p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative py-20 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 gap-12">
+      <img src="Profile_Pic.jpg" alt="Soumya Chatterjee" class="rounded-3xl shadow-2xl w-52 h-52 object-cover ring-4 ring-brand-light dark:ring-brand-dark">
+      <div>
+        <h1 class="flip-text text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+          Teaching
+        </h1>
+        <p class="mt-3 text-lg text-gray-700 dark:text-gray-300">
+          Undergraduate • Postgraduate • Guest Lectures
+        </p>
+        <p class="mt-2 text-gray-600 dark:text-gray-400 max-w-2xl">
+          Courses delivered at NIT Durgapur and other institutions, focused on High Voltage Engineering, Electrical Machines, Power Systems, and Signal Processing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flip animation -->
+  <style>
+    .flip-text { display:inline-block; animation: flip 4s infinite; transform-style: preserve-3d; }
+    @keyframes flip { 0%{transform:rotateY(0)} 40%{transform:rotateY(360deg)} 100%{transform:rotateY(360deg)} }
+    .animate-fadeIn { animation: fadeIn 0.9s ease-in-out; }
+    @keyframes fadeIn { from { opacity:0; transform: translateY(12px);} to { opacity:1; transform: translateY(0);} }
+  </style>
+
+  <!-- Teaching Philosophy -->
+  <section id="philosophy" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Teaching Philosophy</h2>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+      My teaching approach emphasizes a strong foundation of electrical engineering principles 
+      with real-world applications. I integrate problem-based learning, simulation tools, and 
+      research insights to encourage critical thinking and innovation. The goal is to empower 
+      students to apply theory into practice across power systems, high-voltage equipment, 
+      and advanced signal processing domains.
+    </p>
+  </section>
+
+  <!-- Undergraduate Courses -->
+  <section id="ug" class="bg-gray-100 dark:bg-gray-800 py-16 animate-fadeIn">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Undergraduate Courses</h2>
+      <ul class="space-y-3 text-gray-700 dark:text-gray-300 list-disc list-inside">
+        <li>High Voltage Engineering</li>
+        <li>Electrical Machines</li>
+        <li>Power System Protection</li>
+        <li>Signal & Systems</li>
+        <li>Electrical Measurements & Instrumentation</li>
+        <li>Control Systems</li>
+        <li>Renewable Energy Systems</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Postgraduate Courses -->
+  <section id="pg" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Postgraduate Courses</h2>
+    <ul class="space-y-3 text-gray-700 dark:text-gray-300 list-disc list-inside">
+      <li>Digital Signal Processing</li>
+      <li>Soft Computing Applications</li>
+      <li>Research Methodology</li>
+      <li>Advanced High Voltage Engineering</li>
+      <li>Condition Monitoring of Electrical Equipment</li>
+    </ul>
+  </section>
+
+  <!-- Workshops / Guest Lectures -->
+  <section id="workshops" class="bg-gray-100 dark:bg-gray-800 py-16 animate-fadeIn">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Workshops & Guest Lectures</h2>
+      <details class="p-5 bg-white dark:bg-gray-700 rounded-2xl shadow">
+        <summary class="cursor-pointer font-semibold">Click to expand</summary>
+        <div class="mt-3 text-gray-700 dark:text-gray-300 space-y-2">
+          <p>Delivered invited lectures on High Voltage Diagnostics, Signal Processing, and Condition Monitoring at multiple IEEE and academic events.</p>
+          <p>Organized faculty development programs (FDPs) on Electrical Machines and Emerging Power Systems.</p>
+          <p>Resource person for GIAN/TEQIP workshops on Smart Grids and Renewable Integration.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Contact</h2>
+    <p class="text-gray-700 dark:text-gray-300"><b>Email:</b> schatterjee.ee@nitdgp.ac.in</p>
+    <p class="text-gray-700 dark:text-gray-300"><b>Affiliation:</b> Department of Electrical Engineering, NIT Durgapur</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center text-gray-600 dark:text-gray-400">
+    © 2025 Dr. Soumya Chatterjee • NIT Durgapur
+  </footer>
+
+  <!-- Script: Dark Mode -->
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+    if (localStorage.getItem("theme") === "dark") { html.classList.add("dark"); themeToggle.textContent = "☀️"; }
+    themeToggle.addEventListener("click", () => {
+      html.classList.toggle("dark");
+      const isDark = html.classList.contains("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      themeToggle.textContent = isDark ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>

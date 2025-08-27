@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact • Dr. Soumya Chatterjee</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              light: '#6366f1',  // Indigo
+              dark: '#a78bfa',   // Purple
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition duration-500">
+
+  <!-- Navbar -->
+  <header class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-md sticky top-0 z-50 transition">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-brand-light dark:text-brand-dark">Dr. Soumya Chatterjee</a>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="about.html" class="hover:text-brand-light dark:hover:text-brand-dark">About</a>
+        <a href="research.html" class="hover:text-brand-light dark:hover:text-brand-dark">Research</a>
+        <a href="publications.html" class="hover:text-brand-light dark:hover:text-brand-dark">Publications</a>
+        <a href="teaching.html" class="hover:text-brand-light dark:hover:text-brand-dark">Teaching</a>
+        <a href="awards.html" class="hover:text-brand-light dark:hover:text-brand-dark">Awards</a>
+        <a href="contact.html" class="hover:text-brand-light dark:hover:text-brand-dark">Contact</a>
+      </nav>
+      <!-- Dark Mode Toggle -->
+      <button id="theme-toggle" class="ml-4 p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="relative py-20 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 transition">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-center mb-12 text-transparent bg-clip-text 
+                 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+        Get in Touch
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        
+        <!-- Contact Info -->
+        <div class="space-y-6">
+          <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            📍 Department of Electrical Engineering,<br>
+            National Institute of Technology (NIT) Durgapur,<br>
+            Mahatma Gandhi Avenue, Durgapur – 713209,<br>
+            West Bengal, India
+          </p>
+          <p class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+            <i data-lucide="mail"></i>
+            <a href="mailto:schatterjee.ee@nitdgp.ac.in" class="text-brand-light dark:text-brand-dark hover:underline">
+              schatterjee.ee@nitdgp.ac.in
+            </a>
+          </p>
+          <p class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+            <i data-lucide="mail"></i>
+            <a href="mailto:chapeshwar@gmail.com" class="text-brand-light dark:text-brand-dark hover:underline">
+              chapeshwar@gmail.com
+            </a>
+          </p>
+          <p class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+            <i data-lucide="phone"></i>
+            +91-9051016652 / +91-9123770668
+          </p>
+        </div>
+
+        <!-- Links with Icons -->
+        <div class="space-y-4">
+          <h3 class="text-2xl font-semibold mb-4">Find Me Online</h3>
+          <a href="https://scholar.google.com/citations?user=fASc5B0AAAAJ&hl=en"
+             class="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 shadow rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+            <i data-lucide="book-open"></i>
+            <span>Google Scholar</span>
+          </a>
+          <a href="https://publons.com/researcher/1451092/soumya-chatterjee/"
+             class="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 shadow rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+            <i data-lucide="award"></i>
+            <span>Publons Profile</span>
+          </a>
+          <a href="https://www.researchgate.net/profile/Soumya-Chatterjee-8?ev=hdr_xprf"
+             class="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 shadow rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+            <i data-lucide="network"></i>
+            <span>ResearchGate</span>
+          </a>
+          <a href="https://orcid.org/0000-0002-4162-4472"
+             class="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 shadow rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+            <i data-lucide="id-card"></i>
+            <span>ORCID</span>
+          </a>
+          <a href="https://www.linkedin.com/in/soumya-chatterjee-716706237/"
+             class="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 shadow rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+            <i data-lucide="linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+
+          <!-- CV Section -->
+          <div class="mt-6 p-4 bg-white dark:bg-gray-800 shadow rounded-lg text-center">
+          <h3 class="text-xl font-semibold mb-3">Curriculum Vitae</h3>
+          
+          <!-- View CV -->
+          <a href="CV_Soumya_Chatterjee.pdf" target="_blank"
+            class="inline-flex items-center gap-2 px-5 py-2 mb-3 rounded-lg bg-gradient-to-r from-green-600 to-teal-600 text-white font-semibold hover:opacity-90 transition">
+            <i data-lucide="eye"></i>
+            <span>View CV</span>
+          </a>
+          <br>
+          <!-- Download CV -->
+          <a href="CV_Soumya_Chatterjee.docx" download
+            class="inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold hover:opacity-90 transition">
+            <i data-lucide="file-text"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center text-gray-600 dark:text-gray-400">
+    © 2025 Dr. Soumya Chatterjee • NIT Durgapur
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+
+    if(localStorage.getItem("theme") === "dark"){
+      html.classList.add("dark");
+      themeToggle.textContent = "☀️";
+    }
+
+    themeToggle.addEventListener("click", () => {
+      html.classList.toggle("dark");
+      if(html.classList.contains("dark")){
+        localStorage.setItem("theme","dark");
+        themeToggle.textContent = "☀️";
+      } else {
+        localStorage.setItem("theme","light");
+        themeToggle.textContent = "🌙";
+      }
+    });
+
+    lucide.createIcons(); // Initialize Lucide icons
+  </script>
+
+</body>
+</html>

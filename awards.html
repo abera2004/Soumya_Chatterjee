@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumya Chatterjee • Awards & Honors</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: { brand: { light: '#2563eb', dark: '#3b82f6' } }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 font-sans transition-colors duration-500">
+
+  <!-- Navbar -->
+  <header class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-md sticky top-0 z-50 transition">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-brand-light dark:text-brand-dark">Dr. Soumya Chatterjee</a>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="about.html" class="hover:text-brand-light dark:hover:text-brand-dark">About</a>
+        <a href="research.html" class="hover:text-brand-light dark:hover:text-brand-dark">Research</a>
+        <a href="publications.html" class="hover:text-brand-light dark:hover:text-brand-dark">Publications</a>
+        <a href="teaching.html" class="hover:text-brand-light dark:hover:text-brand-dark">Teaching</a>
+        <a href="awards.html" class="hover:text-brand-light dark:hover:text-brand-dark">Awards</a>
+        <a href="contact.html" class="hover:text-brand-light dark:hover:text-brand-dark">Contact</a>
+      </nav>
+      <!-- Dark Mode Toggle -->
+      <button id="theme-toggle" class="ml-4 p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative py-20 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 gap-12">
+      <img src="Profile_Pic.jpg" alt="Soumya Chatterjee" class="rounded-3xl shadow-2xl w-52 h-52 object-cover ring-4 ring-brand-light dark:ring-brand-dark">
+      <div>
+        <h1 class="flip-text text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+          Awards & Honors
+        </h1>
+        <p class="mt-3 text-lg text-gray-700 dark:text-gray-300">
+          Recognitions • Fellowships • Professional Memberships
+        </p>
+        <p class="mt-2 text-gray-600 dark:text-gray-400 max-w-2xl">
+          Highlighting scholarships, awards, fellowships, and roles in professional bodies acknowledging contributions to Electrical Engineering and High Voltage research.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flip animation -->
+  <style>
+    .flip-text { display:inline-block; animation: flip 4s infinite; transform-style: preserve-3d; }
+    @keyframes flip { 0%{transform:rotateY(0)} 40%{transform:rotateY(360deg)} 100%{transform:rotateY(360deg)} }
+    .animate-fadeIn { animation: fadeIn 0.9s ease-in-out; }
+    @keyframes fadeIn { from { opacity:0; transform: translateY(12px);} to { opacity:1; transform: translateY(0);} }
+  </style>
+
+  <!-- Awards -->
+  <section id="awards" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Awards & Scholarships</h2>
+    <ul class="list-disc pl-6 space-y-3 text-gray-700 dark:text-gray-300">
+      <li>National Scholarship by Government of India in 2003.</li>
+      <li>Vidyasagar Scholarship by Nava Nalanda High School, India in 2003.</li>
+      <li>National Scholarship by MHRD Government of India, in 2005.</li>
+      <li>Junior Research Fellowship by Jadavpur University, India in 2014.</li>
+      <li>Best Research Paper award in IEEE International Conference (ICCECE) in 2019.</li>
+      <li>Associate Fellow, West Bengal Academy of Science and Technology, 2024.</li>
+    </ul>
+  </section>
+
+  <!-- Professional Memberships -->
+  <section id="memberships" class="bg-gray-100 dark:bg-gray-800 py-16 animate-fadeIn">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Memberships & Professional Activities</h2>
+            
+            <div class="grid sm:grid-cols-2 gap-6">
+            <!-- IEEE Membership -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+                <h4 class="font-semibold text-lg mb-2">IEEE, USA</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                Member of Dielectrics and Electrical Insulation Society (DEIS), Signal Processing Society (SPS), and Sensors Council.
+                </p>
+            </div>
+
+            <!-- IEEE DEIS Kolkata Chapter -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+                <h4 class="font-semibold text-lg mb-2">IEEE DEIS Kolkata Chapter</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                Treasurer (2023–present)
+                </p>
+            </div>
+
+            <!-- IEEE Conferences -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+                <h4 class="font-semibold text-lg mb-2">IEEE CATCON</h4>
+                <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                <li>Registration Chair, IEEE CATCON 2022</li>
+                <li>Publication Chair, IEEE CATCON 2024</li>
+                </ul>
+            </div>
+
+            <!-- Reviewer -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+                <h4 class="font-semibold text-lg mb-2">Reviewer</h4>
+                <details class="text-sm text-gray-600 dark:text-gray-300">
+                <summary class="cursor-pointer font-medium hover:text-brand-light dark:hover:text-brand-dark">
+                    Journals & Conferences (Click to expand)
+                </summary>
+                <ul class="list-disc list-inside mt-3 space-y-1">
+                    <li>IEEE Transactions on Dielectrics and Electrical Insulation</li>
+                    <li>IEEE Transactions on Power Delivery</li>
+                    <li>IEEE Journal of Biomedical and Health Informatics</li>
+                    <li>IEEE Sensors Letters</li>
+                    <li>IEEE Transactions on Neural Systems and Rehabilitation Engineering</li>
+                    <li>IEEE Sensors Journal</li>
+                    <li>IEEE Systems Journal</li>
+                    <li>IEEE Access Journal</li>
+                    <li>IEEE Transactions on Industry Applications</li>
+                    <li>IEEE Industry Applications Magazine</li>
+                    <li>IET Signal Processing</li>
+                    <li>IET Generation, Transmission and Distribution</li>
+                    <li>IET Image Processing</li>
+                    <li>IET Computers and Digital Techniques</li>
+                    <li>IET Science, Measurement and Technology</li>
+                    <li>Journal of Neuroscience Methods, Elsevier</li>
+                    <li>Cellulose, Springer</li>
+                    <li>International Transactions on Electrical Energy Systems, Wiley</li>
+                    <li>International Journal of Imaging Systems and Technology, Wiley</li>
+                    <li>IET High Voltage</li>
+                    <li>Scientific Reports, Springer Nature</li>
+                </ul>
+                </details>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-16 animate-fadeIn">
+    <h2 class="text-3xl font-bold text-brand-light dark:text-brand-dark mb-6">Contact</h2>
+    <p class="text-gray-700 dark:text-gray-300"><b>Email:</b> schatterjee.ee@nitdgp.ac.in</p>
+    <p class="text-gray-700 dark:text-gray-300"><b>Affiliation:</b> Department of Electrical Engineering, NIT Durgapur</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center text-gray-600 dark:text-gray-400">
+    © 2025 Dr. Soumya Chatterjee • NIT Durgapur
+  </footer>
+
+  <!-- Script: Dark Mode -->
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+    if (localStorage.getItem("theme") === "dark") { html.classList.add("dark"); themeToggle.textContent = "☀️"; }
+    themeToggle.addEventListener("click", () => {
+      html.classList.toggle("dark");
+      const isDark = html.classList.contains("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      themeToggle.textContent = isDark ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>
